@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <meta name="description" content="Amazon Clone" />
       </Head>
 
-      <h1 className="text-red-500 text-9xl text-center">Lets build Amazon</h1>
+      <Header />
     </div>
   );
 }
