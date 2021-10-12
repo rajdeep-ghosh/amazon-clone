@@ -1,8 +1,8 @@
 function Header() {
   return (
-    <div>
+    <header>
       <h1 className="text-red-500 text-9xl text-center">Lets build Amazon</h1>
-    </div>
+    </header>
   );
 }
 
