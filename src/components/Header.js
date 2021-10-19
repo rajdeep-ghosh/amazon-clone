@@ -47,7 +47,7 @@ function Header() {
           <div className="link relative flex items-center space-x-1">
             <span className="absolute -top-1 -right-1 md:right-11 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">0</span>
             <ShoppingCartIcon className="h-8" />
-            <p className="hidden md:inline mt-2 font-extrabold md:text-sm">Basket</p>
+            <p className="hidden md:inline mt-1 font-extrabold md:text-sm">Basket</p>
           </div>
         </div>
       </div>
