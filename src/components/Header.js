@@ -1,6 +1,7 @@
 import Image from "next/image";
 import amznLogoREV from "../assets/images/amzn-logo-rev.svg";
 import { SearchIcon, ShoppingCartIcon } from "@heroicons/react/outline";
+import indiaFlag from "../assets/images/india-flag.svg";
 
 function Header() {
   return (
@@ -27,6 +28,14 @@ function Header() {
 
         {/* Right container */}
         <div className="text-white text-xs flex items-center space-x-6 mx-6 whitespace-nowrap">
+          <Image 
+            src={indiaFlag} 
+            height={30}
+            width={30} 
+            alt="Country flag" 
+            objectFit="contain" 
+            className="hidden md:inline cursor-pointer" 
+          />          
           <div className="link">
             <p>Hello Rajdeep Ghosh</p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
