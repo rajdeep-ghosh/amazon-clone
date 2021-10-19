@@ -1,5 +1,6 @@
 import Image from "next/image";
 import amznLogoREV from "../assets/images/amzn-logo-rev.svg";
+import { SearchIcon } from "@heroicons/react/outline";
 
 function Header() {
   return (
@@ -16,6 +17,11 @@ function Header() {
             objectFit="contain"
             className="cursor-pointer"
           />
+        </div>
+        {/* Search */}
+        <div className="hidden sm:flex flex-grow items-center h-10 rounded-md bg-yellow-400 hover:bg-yellow-500 cursor-pointer">
+          <input className="px-4 py-2 h-full w-6 flex-1 rounded-l-md focus:outline-none" type="text" placeholder="Search" />
+          <SearchIcon className="h-8 p-2" />
         </div>
       </div>
     </header>
