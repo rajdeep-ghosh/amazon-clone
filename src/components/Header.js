@@ -1,6 +1,6 @@
 import Image from "next/image";
 import amznLogoREV from "../assets/images/amzn-logo-rev.svg";
-import { SearchIcon, ShoppingCartIcon } from "@heroicons/react/outline";
+import { SearchIcon, ShoppingCartIcon, MenuIcon } from "@heroicons/react/outline";
 import indiaFlag from "../assets/images/india-flag.svg";
 
 function Header() {
@@ -50,6 +50,23 @@ function Header() {
             <p className="hidden md:inline mt-2 font-extrabold md:text-sm">Basket</p>
           </div>
         </div>
+      </div>
+
+      {/* Bottom Nav */}
+      <div className="flex items-center space-x-4 p-2 pl-6 bg-amzn_blue-light text-white text-sm">
+        <p className="link flex items-center">
+          <MenuIcon className="h-5 mr-1" />
+          All
+        </p>
+        <p className="link whitespace-nowrap">Prime</p>
+        <p className="link whitespace-nowrap">Prime Video</p>
+        <p className="link whitespace-nowrap">Today&apos;s Deals</p>
+        <p className="link whitespace-nowrap hidden lg:inline-flex">Amazon Business</p>
+        <p className="link whitespace-nowrap hidden lg:inline-flex">Electronics</p>
+        <p className="link whitespace-nowrap hidden lg:inline-flex">Food & Grocery</p>
+        <p className="link whitespace-nowrap hidden lg:inline-flex">Health & Personal Care</p>
+        <p className="link whitespace-nowrap hidden lg:inline-flex">Buy Again</p>
+        <p className="link whitespace-nowrap hidden lg:inline-flex">Shopper Toolkit</p>
       </div>
     </header>
   );
