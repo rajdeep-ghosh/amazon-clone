@@ -15,11 +15,12 @@ function Banner() {
   ];
 
   return (
-    <div>
+    <div className="relative">
+      <div className="absolute bottom-0 w-full h-40 bg-gradient-to-t from-gray-100 to-transparent z-10" />
       <Carousel
         showStatus={false}
         showThumbs={false}
-        showIndicators={true}
+        showIndicators={false}
         interval={4000}
         transitionTime={200}
         autoPlay

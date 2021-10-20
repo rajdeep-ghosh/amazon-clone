@@ -4,7 +4,7 @@ import Banner from "../components/Banner";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-gray-100">
       <Head>
         <title>Amazon Clone</title>
         <meta name="description" content="Amazon Clone" />
