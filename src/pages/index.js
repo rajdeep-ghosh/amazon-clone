@@ -16,7 +16,7 @@ export default function Home() {
 
       <Header />
 
-      <main>
+      <main className="max-w-screen-xl mx-auto">
         <Banner />
       </main>
     </div>
