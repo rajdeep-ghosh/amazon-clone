@@ -61,10 +61,10 @@ function Header() {
         <p className="link whitespace-nowrap">Prime</p>
         <p className="link whitespace-nowrap">Prime Video</p>
         <p className="link whitespace-nowrap">Today&apos;s Deals</p>
-        <p className="link whitespace-nowrap hidden lg:inline-flex">Amazon Business</p>
-        <p className="link whitespace-nowrap hidden lg:inline-flex">Electronics</p>
-        <p className="link whitespace-nowrap hidden lg:inline-flex">Food & Grocery</p>
-        <p className="link whitespace-nowrap hidden lg:inline-flex">Health & Personal Care</p>
+        <p className="link whitespace-nowrap hidden sm:inline-flex">Amazon Business</p>
+        <p className="link whitespace-nowrap hidden sm:inline-flex">Electronics</p>
+        <p className="link whitespace-nowrap hidden md:inline-flex">Food & Grocery</p>
+        <p className="link whitespace-nowrap hidden md:inline-flex">Health & Personal Care</p>
         <p className="link whitespace-nowrap hidden lg:inline-flex">Buy Again</p>
         <p className="link whitespace-nowrap hidden lg:inline-flex">Shopper Toolkit</p>
       </div>
