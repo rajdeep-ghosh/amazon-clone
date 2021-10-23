@@ -40,7 +40,7 @@ function Product({ id, title, desc, category, price, rating, img }) {
         <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
       </div>
 
-      <button className="mt-3 p-2 text-sm md:text-md bg-gradient-to-b from-yellow-200 to-yellow-400 border border-yellow-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500 active:from-yellow-500">Add to Basket</button>
+      <button className="btn">Add to Basket</button>
     </div>
   );
 }
