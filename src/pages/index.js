@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Banner from "../components/Banner";
 import ProductFeed from "../components/ProductFeed";
+import Footer from "../components/Footer";
 
 export default function Home(props) {
   return (
@@ -22,6 +23,8 @@ export default function Home(props) {
         <Banner />
         <ProductFeed products={props.products} />
       </main>
+
+      <Footer />
     </div>
   );
 }
