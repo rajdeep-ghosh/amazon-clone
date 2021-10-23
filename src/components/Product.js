@@ -1,8 +1,11 @@
+import { useState } from "react";
 import Image from "next/image";
 import Currency from "react-currency-formatter";
 import { StarIcon } from "@heroicons/react/solid";
 
 function Product({ id, title, desc, category, price, rating, img }) {
+  const [hasPrime] = useState(Math.random() < 0.5);
+
   return (
     <div className="flex flex-col m-5 p-10 bg-white z-20">
       <Image
@@ -32,7 +35,7 @@ function Product({ id, title, desc, category, price, rating, img }) {
         </div>
       </div>
       
-      <div className="flex items-center space-x-2">
+      <div className={`flex items-center space-x-2 ${hasPrime ? `visible` : `invisible`}`}>
         <Image src="https://bit.ly/3prP2qx" width={48} height={48} alt="prime" />
         <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
       </div>
