@@ -40,7 +40,7 @@ function Header() {
             <p>Hello Rajdeep Ghosh</p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
-          <div className="link">
+          <div className="link hidden md:inline">
             <p>Returns &</p>
             <p className="font-extrabold md:text-sm">Orders</p>
           </div>
