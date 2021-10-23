@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["bit.ly"],
+    domains: ["bit.ly", "fakestoreapi.com"],
   },
 };

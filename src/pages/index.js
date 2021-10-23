@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import ProductFeed from "../components/ProductFeed";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <div className="bg-gray-100">
       <Head>
@@ -20,7 +20,7 @@ export default function Home() {
 
       <main className="max-w-screen-xl mx-auto">
         <Banner />
-        <ProductFeed />
+        <ProductFeed products={props.products} />
       </main>
     </div>
   );
