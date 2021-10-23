@@ -13,10 +13,18 @@ module.exports = {
           DEFAULT: "#131921",
         },
       },
+      fontSize: {
+        xxs: "0.6rem",
+      },
+      fontFamily: {
+        "Nunito-Sans": ['"Nunito Sans", sans-serif'],
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/line-clamp")
+  ],
 };
