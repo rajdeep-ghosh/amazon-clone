@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="py-12 px-6 bg-amzn_blue-light text-gray-300">
       {/* Top */}
-      <div className="flex flex-col space-y-8 md:flex-row justify-between md:space-y-0">
+      <div className="flex flex-col space-y-8 md:flex-row justify-between lg:justify-around md:space-y-0">
         <FooterNav
           head="Get to Know Us"
           subHead={[
@@ -51,7 +51,7 @@ function Footer() {
       </div>
 
       {/* Bottom */}
-      <div className="mt-12 pt-12 flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-8 text-center border-t border-solid border-gray-600">
+      <div className="mt-12 pt-12 flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-8 justify-center text-center border-t border-solid border-gray-600">
         <Image src={amznLogoREV} width={90} height={35} alt="Amazon logo" />
         <span>
           &copy; 2021 | Developed by{" "}
