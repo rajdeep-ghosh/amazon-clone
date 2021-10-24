@@ -3,6 +3,8 @@ import FooterNav from "./FooterNav";
 import amznLogoREV from "../assets/images/amzn-logo-rev.svg";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="py-12 px-6 bg-amzn_blue-light text-gray-300">
       {/* Top */}
@@ -54,7 +56,7 @@ function Footer() {
       <div className="mt-12 pt-12 flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-8 justify-center text-center border-t border-solid border-gray-600">
         <Image src={amznLogoREV} width={90} height={35} alt="Amazon logo" />
         <span>
-          &copy; 2021 | Developed by{" "}
+          &copy; {year} | Developed by{" "}
           <a
             href="https://github.com/rajdeep-ghosh/amazon-clone"
             target="_blank"
