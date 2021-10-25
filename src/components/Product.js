@@ -7,7 +7,7 @@ function Product({ id, title, desc, category, price, rating, img }) {
   const [hasPrime] = useState(Math.random() < 0.5);
 
   return (
-    <div className="flex flex-col m-5 p-10 bg-white z-20 rounded-lg">
+    <div className="flex flex-col m-5 p-10 bg-white z-20 rounded-lg shadow-md">
       <Image
         src={img}
         width={200}
