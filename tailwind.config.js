@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         "Nunito-Sans": ['"Nunito Sans", sans-serif'],
+        "Rubik": ['"Rubik", sans-serif'],
       },
     },
   },
