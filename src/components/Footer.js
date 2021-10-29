@@ -61,7 +61,7 @@ function Footer() {
             href="https://github.com/rajdeep-ghosh/amazon-clone"
             target="_blank"
             rel="noreferrer"
-            className="text-yellow-400"
+            className="text-yellow-400 hover:underline"
           >
             Rajdeep Ghosh
           </a>
