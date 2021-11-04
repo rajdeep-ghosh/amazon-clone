@@ -1,9 +1,12 @@
 import Image from "next/image";
+import { signIn, signOut, useSession } from "next-auth/client";
 import amznLogoREV from "../assets/images/amzn-logo-rev.svg";
 import { SearchIcon, ShoppingCartIcon, MenuIcon } from "@heroicons/react/outline";
 import indiaFlag from "../assets/images/india-flag.svg";
 
 function Header() {
+  const [session] = useSession();
+
   return (
     <header>
       {/* Top Nav */}
@@ -36,8 +39,8 @@ function Header() {
             objectFit="contain" 
             className="hidden md:inline cursor-pointer" 
           />          
-          <div className="link">
-            <p>Hello Rajdeep Ghosh</p>
+          <div onClick={!session ? signIn : signOut} className="link">
+            <p>{session ? `Hello, ${session.user.name}` : `Sign In`}</p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
           <div className="link hidden md:inline">
