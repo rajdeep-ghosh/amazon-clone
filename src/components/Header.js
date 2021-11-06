@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { signIn, signOut, useSession } from "next-auth/client";
 import { useRouter } from "next/router";
+import { useSelector } from "react-redux";
+import { selectItems } from "../slices/basketSlice";
 import amznLogoREV from "../assets/images/amzn-logo-rev.svg";
 import {
   SearchIcon,
@@ -12,6 +14,7 @@ import indiaFlag from "../assets/images/india-flag.svg";
 function Header() {
   const [session] = useSession();
   const router = useRouter();
+  const items = useSelector(selectItems);
 
   return (
     <header>
@@ -60,7 +63,7 @@ function Header() {
           </div>
           <div onClick={() => {router.push("/checkout")}} className="link relative flex items-center space-x-1">
             <span className="absolute -top-1 -right-1 md:right-11 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font-bold">
-              0
+              {items.length}
             </span>
             <ShoppingCartIcon className="h-8" />
             <p className="hidden md:inline mt-1 font-extrabold md:text-sm">
