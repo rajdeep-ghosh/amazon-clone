@@ -11,7 +11,7 @@ function Product({ id, title, desc, category, price, rating, img }) {
   const [hasPrime] = useState(Math.random() < 0.5);
 
   function addItem() {
-    const product = { id, title, desc, category, price, rating, img };
+    const product = { id, title, desc, category, price, rating, img, hasPrime };
     dispatch(addToBasket(product));
   }
 

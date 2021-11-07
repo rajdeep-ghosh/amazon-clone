@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 import { selectItems } from "../slices/basketSlice";
 import Header from "../components/Header";
+import CheckoutProduct from "../components/CheckoutProduct";
 
 function Checkout() {
   const items = useSelector(selectItems);
@@ -22,9 +23,25 @@ function Checkout() {
           />
 
           <div className="p-5 bg-white">
-            <h1 className="text-3xl font-semibold border-b-2 pb-4">
+            <h1 className="text-3xl font-semibold border-b-2 pb-4 mb-8">
               {items.length === 0 ? `Your basket is empty` : `Your Shopping Basket`}
             </h1>
+
+            {items.map((item, index) => {
+              return (
+                <CheckoutProduct 
+                  key={index}
+                  id={item.id}
+                  title={item.title}
+                  desc={item.desc}
+                  category={item.category}
+                  price={item.price}
+                  rating={item.rating}
+                  img={item.img}
+                  hasPrime={item.hasPrime}
+                />
+              );
+            })}
           </div>
         </div>
 
