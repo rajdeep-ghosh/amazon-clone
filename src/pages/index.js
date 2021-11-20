@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 export default function Home(props) {
   return (
-    <div className="bg-gray-100 font-Nunito-Sans antialiased">
+    <>
       <Head>
         <title>Amazon Clone</title>
         <meta name="description" content="Amazon Clone" />
@@ -16,16 +16,18 @@ export default function Home(props) {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
       </Head>
+      
+      <div className="bg-gray-100 font-Nunito-Sans antialiased">
+        <Header />
 
-      <Header />
+        <main className="max-w-screen-xl mx-auto">
+          <Banner />
+          <ProductFeed products={props.products} />
+        </main>
 
-      <main className="max-w-screen-xl mx-auto">
-        <Banner />
-        <ProductFeed products={props.products} />
-      </main>
-
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 
