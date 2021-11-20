@@ -1,8 +1,16 @@
 import Image from "next/image";
 import { StarIcon } from "@heroicons/react/solid";
 import Currency from "react-currency-formatter";
+import { useDispatch } from "react-redux";
+import { removeFromBasket } from "../slices/basketSlice";
 
 function CheckoutProduct(props) {
+  const dispatch = useDispatch();
+  
+  function removeItem() {
+    dispatch(removeFromBasket(props.id));
+  }
+
   return (
     <div className="grid md:grid-cols-5 mb-8">
       <Image
@@ -31,6 +39,10 @@ function CheckoutProduct(props) {
             <p className="hidden md:block text-xs text-gray-500">FREE Next-day Delivery</p>
           </div>
         )}
+      </div>
+      
+      <div className="w-full flex flex-col justify-center">
+        <button onClick={removeItem} className="btn">Remove from Basket</button>
       </div>
     </div>
   );
